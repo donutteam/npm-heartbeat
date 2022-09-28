@@ -1,0 +1,25 @@
+{
+  "name": "@donutteam/heartbeat",
+  "version": "1.0.0",
+  "description": "A simple function for periodically pinging a heartbeat URL.",
+  "main": "./index.js",
+  "scripts": {
+    "lint": "eslint . -c ./.eslintrc.cjs",
+    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donutteam/heartbeat.git"
+  },
+  "keywords": [
+    "heartbeat",
+    "fetch"
+  ],
+  "author": "Donut Team",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@donutteam/eslint-config": "^1.0.6",
+    "eslint": "^8.24.0"
+  }
+}
