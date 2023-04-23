@@ -2,10 +2,12 @@
   "name": "@donutteam/heartbeat",
   "version": "1.0.1",
   "description": "A simple function for periodically pinging a heartbeat URL.",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
+    "build": "npx rimraf lib && npx tsc",
     "lint": "eslint . -c ./.eslintrc.cjs",
-    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix"
+    "lint-fix": "eslint . -c ./.eslintrc.cjs --fix",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,9 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "@donutteam/eslint-config": "^1.0.6",
-    "eslint": "^8.24.0"
+    "@donutteam/eslint-config": "^2.0.0",
+    "eslint": "^8.39.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }
