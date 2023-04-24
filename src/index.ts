@@ -14,7 +14,7 @@ export interface HeartbeatOptions
  * 
  * @author Loren Goodwin
  */
-export async function heartbeat(heartbeatUrl : string, options : HeartbeatOptions) : Promise<void>
+export async function heartbeat(heartbeatUrl : string, options : HeartbeatOptions = {}) : Promise<void>
 {
 	//
 	// Check for Heartbeat URL
@@ -30,8 +30,6 @@ export async function heartbeat(heartbeatUrl : string, options : HeartbeatOption
 	//
 	// Default Options
 	//
-
-	options ??= {};
 
 	options.interval ??= 60000;
 
