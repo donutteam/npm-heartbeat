@@ -1,6 +1,6 @@
 {
   "name": "@donutteam/heartbeat",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple function for periodically pinging a heartbeat URL.",
   "main": "./lib/index.js",
   "scripts": {
